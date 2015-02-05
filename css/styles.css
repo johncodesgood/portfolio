@@ -1,0 +1,137 @@
+* {
+  border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+}
+
+.navbar {
+  background: rgba(0,0,0,0.8);
+  border: none;
+  box-shadow: 0px 0px;
+ /* position:fixed;*/
+  width:100%; 
+  z-index: 3;
+  margin-bottom: 0px;
+}
+
+.nav.navbar-nav li a {
+    color: white;
+    font-size: 16px;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: left;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.nav li a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .nav li a {
+    padding-left: 60px;
+  }
+}
+
+.social-media-icons:hover {
+  opacity: 0.6;
+}
+
+.homepage {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+#home-words {
+  position: absolute;
+  z-index:2;
+  color: white;
+  font-size: 1.6em;
+  text-align: center;
+  margin-top: 22%;
+/*  margin-left: 60%;
+  padding-right: 10%;*/
+}
+
+@media (min-width: 768px) {
+  #home-words {
+    font-size: 2.6em;
+    margin-left: 60%;
+    padding-right: 10%;
+  }
+}
+
+.home-words-color {
+  /*color: #2E9AFE;*/
+  /*color: #23527C;*/
+  color: #0080FF;
+}
+
+.home-words-color:hover {
+  text-decoration: none;
+  color: #1C4161;
+}
+
+.no-margin {
+  margin-bottom: 0px;
+}
+
+.section-header {
+  font-size: 3em;
+  text-align:center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+#web-development {
+  background-color:#F2F2F2;
+}
+
+#product-management {
+  background-color: #D8D8D8;
+}
+
+#marketing-innovation {
+ background-color: #A4A4A4;
+}
+
+.footer {
+ background-color: black;
+}
+
+.img-scale {
+  max-width:70%;
+  margin-bottom: 8%; 
+}
+
+.video-scale {
+  padding-left: 16%;
+  padding-right: 16%;
+}
+
+.video-bottom {
+  margin-bottom: 16%;
+}
+
+video { 
+  /*position: fixed;*/
+  position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  /*height: auto;*/
+  height: auto;
+  z-index: -100;
+ background: url('http://demosthenes.info/assets/images/polina.jpg') no-repeat;
+ /* background-size: cover;*/
+  transition: 1s opacity;
+}

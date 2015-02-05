@@ -1,15 +1,178 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8" />
-    <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-    <script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
-    <script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
-
+  <meta charset="UTF-8">
+  <title>John Boese</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#web-development">Web Development</a></li>
+          <li><a href="#product-management">Product Management</a></li>
+          <li><a href="#marketing-innovation">Marketing Innovation</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://www.linkedin.com/in/johnboese" class="social-media-icons"><img src='img/linkedin.png' /></a></li>
+          <li><a href="https://github.com/johncodesgood" class="social-media-icons"><img src='img/github.png' /></a></li>
+          <li><a href="https://twitter.com/johnboese" class="social-media-icons"><img src='img/twitter.png' /></a></li>
+          <li><a href="https://www.facebook.com/john.o.boese" class="social-media-icons"><img src='img/facebook-square.png' /></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+	<div class="container homepage">
+    <div class="row">
+      <div class="col-xs-5 col-xs-offset-1" id="home-words">
+        <p>I'm a <a href="#web-development" class="home-words-color">Web Developer</a> and <a href="#product-management" class="home-words-color">Product Manager</a> looking for freelance projects. <a href="" class="home-words-color" data-toggle="modal" data-target="#hireModal">Hire Me!</a></p>
+      </div>
+    </div>
+    <video class="hidden-xs" autoplay poster="img/speaking-still.jpg" id="bgvid" loop>
+      <source src="img/Ogilvy3.webm" type="video/webm">
+      <source src="img/Ogilvy3.mp4" type="video/mp4">
+		</video>
+    <img class="visible-xs-block" src="img/speaking-still.jpg" />
+	</div>
 
+  <div class="container-fluid">
+    <a name="web-development"></a>
+    <div class="row">
+      <div class="col-xs-12" id="web-development">
+        <div class="col-xs-12 section-header">
+          <p>Web Development</p>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 text-center">
+          	<h4><strong>GoFindFriends</strong></h4>
+            <p class="no-margin">Social networking site to meet new people and join fun events</p>
+            <p>Angular.js &#8226; Firebase &#8226; Facebook API</p>
+            <a href="https://gofindfriends.com/">
+              <img src="img/gofindfriends.gif" class="img-scale center-block">
+            </a>
+          </div>
+          <div class="col-xs-12 col-md-6 text-center">
+          	<h4><strong>Madagascar Games</strong></h4>
+            <p class="no-margin">Gaming site with Hangman and two-player Tic-Tac-Toe</p>
+            <p>Javascript &#8226; Ruby &#8226; Sinatra</p>
+            <a href="http://madagascar-games.herokuapp.com/">
+              <img src="img/games.gif" class="img-scale center-block">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 text-center">
+          	<h4><strong>DateSpeak</strong></h4>
+            <p class="no-margin">Recommends date ideas in NYC based on preferences</p>
+            <p>Backbone.js &#8226; Express &#8226; Postgresql</p>
+            <a href="http://datespeak.com/">
+              <img src="img/datespeak.gif" class="img-scale center-block">
+            </a>
+          </div>
+          <div class="col-xs-12 col-md-6 text-center">
+          	<h4><strong>NiteWriter</strong></h4>
+            <p class="no-margin">Writers commit to write 250 words per day or face social shaming</p>
+            <p>Ruby on Rails &#8226; Facebook API &#8226; Twilio API</p>
+            <a href="http://write5.herokuapp.com/">
+              <img src="img/nitewriter.jpg" class="img-scale center-block">
+            </a>
+          </div>
+         </div>
+      </div>
+    </div>  
+    <a name="product-management"></a>
+    <div class="row">
+      <div class="col-xs-12" id="product-management">
+        <div class="col-xs-12 section-header">
+          <p>Product Management</p>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 text-center">
+            <h4><strong>American Express Video Chat</strong></h4>
+            <p>Video chat with customer service on the Amex iPad app</p>
+              <img src="img/video-chat.jpg" class="img-scale center-block">
+          </div>
+          <div class="col-xs-12 col-md-6 text-center">
+            <h4><strong>American Express iPhone Apps</strong></h4>
+            <p>Amex iPhone apps launched in 10 international markets</p>
+              <img src="img/amex-iphone.png" class="img-scale center-block">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 text-center">
+            <h4><strong>Urban Dash</strong></h4>
+            <p>Location-based iPhone game for New Balance Shoes</p>
+              <img src="img/new-balance.jpg" class="img-scale center-block">
+          </div>
+          <div class="col-xs-12 col-md-6 text-center">
+            <h4><strong>The Matching Game</strong></h4>
+            <p>Facebook dating app where you match up your friends</p>
+              <img src="img/matching-game.jpg" class="img-scale center-block">
+          </div>
+         </div>
+      </div>
+    </div>  
+    <a name="marketing-innovation"></a>
+    <div class="row">
+      <div class="col-xs-12" id="marketing-innovation">
+        <div class="col-xs-12 section-header">
+          <p>Marketing Innovation</p>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 text-center">
+            <h4><strong>Ogilvy & Mather Innovation Lab</strong></h4>
+            <p>Former Director of Ogilvy's Digital Innovation Lab in New York</p>
+            <div class="embed-responsive embed-responsive-16by9 video-bottom">
+              <iframe class="embed-responsive-item video-scale" src="https://www.youtube.com/embed/BAUfjQLKruQ"></iframe>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 text-center">
+            <h4><strong>Mobile Marketing</strong></h4>
+            <p>Panel speaker at App Development conference</p>
+            <div class="embed-responsive embed-responsive-16by9 video-bottom">
+              <iframe class="embed-responsive-item video-scale" src="https://www.youtube.com/embed/bFGMOPRl2fI"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 footer">
+        <p>&nbsp;</p>
+        <br>
+      </div>
+  </div>
+
+<div class="modal fade" id="hireModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Hire Me</h4>
+      </div>
+      <div class="modal-body">
+        <p>I'm currently looking for freelance opportunities in Web Design and Product Management. You can email me at <a href="mailto:john@gofindfriends.com">john(at)gofindfriends(dot)com</a> and we can set up some time to chat!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
